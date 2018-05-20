@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto" >
+            <li class="nav-item navbar-brand">
+                <h4>cms</h4>
+            </li>
+        </ul>
+        <ul class="navbar-nav" > 
+            <?php
+                require_once'secondary/login.php';
+            ?>
+            <li class="nav-item "><a class="nav-link font-weight-bold" data-toggle="modal" data-target="#login_pannel">se connecter</a></li>
+                    
+        </ul>
+    </div>
+</nav>

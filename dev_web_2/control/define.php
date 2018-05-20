@@ -1,0 +1,34 @@
+<?php
+    define("login",0);
+    define("create_account",1);
+    define("create_page",2);
+    define("upload",3);
+    define("poster_article",4);
+    define("delete_photo",5);
+    define("get_all_user",6);
+    define("update_user",7);
+    define("delete_user",8);
+    define("ajouter_poste_page",9);
+    //define("",);
+    //define("",);
+    //define("",);
+    //define("",);
+    define("not_deleted",0);
+    define("deleted",1);
+    //define("",);
+    define("down",0);
+    define("up",1);
+    //define("",);
+    define("admin",1);
+    define("publicateur",2);
+    define("editeur",3);
+    define("graphiste",4);
+
+    define("modifier_page",44);
+    define("delete_page",45);
+    define("delete_article",46);
+    define("update_profile_password",47);
+    define("update_profile_picture",48);
+    define("update_profile",49);
+    define("logout",50);
+?>

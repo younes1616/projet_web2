@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item navbar-brand">
+                            <h4>logo</h4>
+                        </li>
+                        <form class="ml-sm-5" action="" method="post">
+                            <input class="form-control" placeholder="Search" />
+                        </form>
+                    </ul>
+                    <ul class="navbar-nav" > 
+                        <?php
+                            if(isset($_SESSION['mail']))
+                                echo '<li class="nav-item ">
+                                            <form action="../control/functions.php" method="post">
+                                                <button name="method" value=50" class="nav-link font-weight-bold" type="submit">logout</a>
+                                            </form>
+                                        </li>' ; 
+                            else{
+                                    require_once'pannel/login.php';
+                                    echo '<li class="nav-item ">
+                                            <a class="nav-link font-weight-bold" data-toggle="modal" data-target="#login_pannel">
+                                        login</a></li>' ;
+                            }     
+                        ?>
+                    </ul>
+                </div>
+            </nav>

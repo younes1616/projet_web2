@@ -1,0 +1,132 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica Neue", Helvetica, Arial;
+}
+.bg-purple{ background-color: #a633cc;!important }
+.bg-blue{ background-color: dodgerblue ; }
+.bg-pink{ background-color: deeppink; }
+.bg-orange{ background-color: darkorange; }
+.bg-green{ background-color: forestgreen }
+.card img{width: 100%;}
+.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.shadow { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.scrollable{overflow-y: scroll;}
+.height-500{max-height: 500px;}
+#sidebar{
+	background:#151718;
+	width:15%;
+    height: 100%;
+    position: fixed;
+	left:100%;
+	top:0px;
+	transition:left 0.6s linear;
+}
+#main{
+	background:#fff;
+    position: relative;
+    width: 85%;
+    top: 0px;
+    left: 0%;
+	transition:left 0.6s linear;
+}
+#second{
+    background:bg-dark;
+    position: relative;
+    width: 20%;
+    top: 0px;
+    left: 0%;
+    justify-content: center ;
+	transition:left 0.6s linear;
+}
+#sidebar.visible{
+	left:85%;
+	transition:left 0.6s linear;
+}
+
+#sidebar ul{
+	margin:0px;
+	padding:0px;
+}
+
+#sidebar ul li{
+	list-style:none;
+}
+
+#sidebar ul li a{
+    display: flex ;
+    justify-content: center;
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:block;
+	width:100%;
+	padding:10px;
+	text-decoration: none;
+}
+.tag_name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: blueviolet;
+}
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-60px;
+}
+
+#sidebar-btn span{
+	height:1px;
+	background:#111;
+	margin-bottom:5px;
+	display:block;
+}
+#sidebar span{
+    margin: 0px;
+    padding: 0px;
+}
+#sidebar ul li a:hover{
+    color:primary ;
+}
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+	width:50%;
+}
+@media only screen and (max-width:900px)
+{
+    #sidebar.visible , #sidebar{
+        width: 8% ;
+        left : 92% ;
+        transition: left 0.6s linear;
+    }
+    #main{
+        width: 92%;
+        left: 0%;
+        transition: left 0.6s linear;
+    }
+    #sidebar ul li a .desc{
+        display: none;
+        width: 100%;
+    }
+    #sidebar ul li a{
+        display: flex ;
+        width: 100%;
+        justify-content: center ;
+    }
+    #sidebar-btn{
+        display: none ;
+    }
+    .tag_name{
+        display: none ;
+    }
+}

@@ -1,0 +1,73 @@
+.own_card{
+	position: relative;
+	top: 50%;
+	width: 300px ;
+	height: 400px ;
+	background:#262626;
+	
+    padding: 5px ;
+	overflow: hidden;
+	transition: 0.6s;
+	float: left;
+	margin: 2px ;
+}
+.own_card .img , .detail{
+	text-align: center;
+	padding: 9px ;
+	width: 100% ;
+	height: 100% ;
+	position: absolute ;
+	box-sizing: border-box ;
+	transition: .5s ;
+	color: #fff;
+	background:#262626;
+}
+.own_card .detail{
+	transition: 0.6s;
+	overflow-y: scroll;
+	}
+.own_card .detail .titre{
+	padding: 5px;
+	background-color: #E91E63 ;
+	}
+.own_card .img{
+	top:0px;
+	left: 0px;	
+	transition: 0.6s;
+}
+.own_card:hover .img{
+	left: -100%;	
+	transition: 0.6s;
+}
+.own_card .img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #212121 ;
+	width: 100% ;
+	transition: 0.6s;
+}
+p{
+	padding: 3px;
+}
+.own_card span{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+button{
+    padding-bottom: 2px ;
+}
+
+.btn-rounded{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+.display{
+	display: block;
+}
+.display-0{
+	display: none;
+}
